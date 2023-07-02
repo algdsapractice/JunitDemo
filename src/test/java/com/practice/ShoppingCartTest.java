@@ -68,4 +68,16 @@ public class ShoppingCartTest {
         assertEquals(expectedPrice, totalPrice, "Price Not Matching");
 
     }
+
+    @DisplayName("Calculation Of Total Item Price In Cart1")
+    void shouldCalculateTotalPrice2() {
+        // given
+        cart.addItem(item1);
+        cart.addItem(item2);
+
+        double totalPrice = cart.calculateTotalPrice();
+        double expectedPrice = 120000.0;
+        assertEquals(expectedPrice, totalPrice, "Price Not Matching");
+
+    }
 }
