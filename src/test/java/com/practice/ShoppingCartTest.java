@@ -74,10 +74,11 @@ public class ShoppingCartTest {
         // given
         cart.addItem(item1);
         cart.addItem(item2);
-
+        //when
         double totalPrice = cart.calculateTotalPrice();
         double expectedPrice = 120000.0;
-        assertEquals(expectedPrice, totalPrice, "Price Not Matching");
+        //then
+        assertEquals(expectedPrice, totalPrice, "Price in the cart is  Not Matching");
 
     }
 }
