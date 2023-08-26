@@ -20,6 +20,10 @@ public class ShoppingCart {
         items.remove(item);
     }
 
+    public void createACart(Item item) {
+        items.add(item);
+    }
+
 
     public boolean containsItem(Item item) {
         return items.contains(item);
